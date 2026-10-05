@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 构建产物
+build/
+dist/
+
+# 工具/缓存
+.codeartsdoer/
+.codegraph/
+.merkle-snapshot.json
+
+# 运行时数据/日志
+debug.log
+writing_train_data.json

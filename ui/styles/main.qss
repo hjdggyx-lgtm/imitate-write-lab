@@ -1,0 +1,254 @@
+QMainWindow{
+    background-color: #101420;
+}
+
+QWidget#root_widget{
+    background-color: #101420;
+}
+
+QWidget#content_widget{
+    background-color: #101420;
+}
+
+QFrame#shadow_wrap{
+    background-color: #0f111c;
+    border-radius: 0px;
+}
+
+QLabel#card_title{
+    color:#e6c47c;
+    font-size:16pt;
+    font-weight:bold;
+}
+
+QTextEdit{
+    background-color:#0e1322;
+    border-radius:0px;
+    border:1px solid #3c4663;
+    color:#e8e9f2;
+    padding:0px;
+
+}
+
+QPushButton#top_tab{
+    background-color:#222a40;
+    color:#e2c382;
+    border:1px solid #3c4663;
+    border-radius:8px;
+    padding:8px 16px;
+    font-size:11pt;
+}
+QPushButton#top_tab:checked{
+    background-color:#2f3854;
+    border:1px solid #3c4663;
+}
+QPushButton#top_tab:hover{
+    background-color:#2f3854;
+}
+
+QPushButton#sub_btn{
+    background-color:#2a324b;
+    color:#e8cd8c;
+    border:1px solid #3c4663;
+    border-radius:4px;
+    padding:4px 10px;
+}
+QPushButton#sub_btn:hover{
+    background-color:#384260;
+}
+
+/* 默写双段按钮：拼合成一体，中间竖线分隔 */
+QPushButton#dict_left{
+    background-color:#2a324b;
+    color:#e8cd8c;
+    border:1px solid #3c4663;
+    border-right:none;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    padding:2px 6px;
+    margin-top:1px;
+}
+QPushButton#dict_left:checked{
+    background-color:#3a5a2a;
+    color:#ffffff;
+}
+QPushButton#dict_left:hover{
+    background-color:#384260;
+}
+QPushButton#dict_mid{
+    background-color:#2a324b;
+    color:#e8cd8c;
+    border:1px solid #3c4663;
+    border-left:none;
+    border-right:none;
+    border-radius:0;
+    padding:2px 6px;
+    margin-top:1px;
+}
+QPushButton#dict_mid:checked{
+    background-color:#3a5a2a;
+    color:#ffffff;
+}
+QPushButton#dict_mid:hover{
+    background-color:#384260;
+}
+QPushButton#dict_right{
+    background-color:#2a324b;
+    color:#e8cd8c;
+    border:1px solid #3c4663;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    padding:2px 6px;
+    margin-top:1px;
+}
+QPushButton#dict_right:hover{
+    background-color:#384260;
+}
+
+QPushButton#dict_clear{
+    background-color:#2a324b;
+    color:#e8cd8c;
+    border:1px solid #3c4663;
+    border-radius:4px;
+    padding:2px 6px;
+    margin-top:1px;
+}
+QPushButton#dict_clear:hover{
+    background-color:#384260;
+}
+
+/* 最左侧图标竖工具栏 */
+QPushButton#icon_bar_btn{
+    background-color:#181c2c;
+    color:#e2c382;
+    border:none;
+    padding:10px 4px;
+    font-size:16pt;
+    font-weight:bold;
+    font-family: "KaiTi", "楷体", "STKaiti";
+}
+QPushButton#icon_bar_btn:hover{
+    background-color:#272e48;
+}
+QPushButton#icon_bar_btn:checked{
+    border-left:3px solid #d6b162;
+    background-color:#2b3350;
+}
+
+/* 文件树面板 */
+QFrame#file_panel{
+    background-color:#161a2b;
+    border:1px solid #3c4663;
+    border-radius:8px;
+}
+QTreeWidget{
+    background-color:#161a2b;
+    color:#dddddd;
+    border:none;
+}
+QTreeWidget::item{
+    padding:4px 2px;
+}
+QTreeWidget::item:selected{
+    background-color:#2f3854;
+}
+
+QListWidget{
+    background-color:#0e1322;
+    color:#dddddd;
+    border:1px solid #3c4663;
+    border-radius:4px;
+}
+QListWidget::item{
+    padding:3px 8px;
+}
+QListWidget::item:selected{
+    background-color:#2f3854;
+    color:#e6c47c;
+}
+QListWidget::item:hover{
+    background-color:#272e48;
+}
+
+QLabel{
+    color:#dddddd;
+}
+QLabel#status_tip{
+    color:#bbbbbb;
+}
+
+/* QSplitter 分割条：与主背景同色，消除白色缝隙 */
+QSplitter{
+    background-color: #101420;
+}
+QSplitter::handle:horizontal{
+    background-color: #101420;
+    border: none;
+    width: 4px;
+    margin: 0px;
+}
+
+/* 自定义滚动条样式 */
+QScrollBar:vertical{
+    background-color: transparent;
+    width: 3px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:vertical{
+    background-color: #4a5270;
+    min-height: 20px;
+    border: none;
+    border-radius: 1px;
+}
+QScrollBar::handle:vertical:hover{
+    background-color: #5a6280;
+}
+QScrollBar::add-line:vertical{
+    height: 0px;
+    background: none;
+    border: none;
+}
+QScrollBar::sub-line:vertical{
+    height: 0px;
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+    background: none;
+    border: none;
+}
+
+QScrollBar:horizontal{
+    background-color: transparent;
+    height: 3px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:horizontal{
+    background-color: #4a5270;
+    min-width: 20px;
+    border: none;
+    border-radius: 1px;
+}
+QScrollBar::handle:horizontal:hover{
+    background-color: #5a6280;
+}
+QScrollBar::add-line:horizontal{
+    width: 0px;
+    background: none;
+    border: none;
+}
+QScrollBar::sub-line:horizontal{
+    width: 0px;
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
+    background: none;
+    border: none;
+}
