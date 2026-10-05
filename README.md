@@ -6,6 +6,12 @@
 
 **抄写 / 默写功能已可使用。**
 
+## 下载使用
+
+1. 前往 [Releases](https://gitee.com/hjdgkj/imitate-write-lab/releases) 下载最新 `写作训练-v*.zip`
+2. 解压后双击 `写作训练.exe` 即可运行，无需安装 Python 环境
+3. 数据文件放 exe 同级目录，整个文件夹可拷贝到任意路径运行，不写注册表 / 系统位置
+
 ## 功能
 
 - **抄写练习**：左侧原文区显示原文，右侧复写区跟打，行号对齐、当前行高亮
@@ -16,31 +22,19 @@
 - **听写**：高亮行语音播报
 - **数据记忆**：每章节复写内容自动保存，切换章节不丢失
 
-## 运行
+## 从源码运行（开发者）
 
 ```bash
 python writing_train_ui.py
 ```
 
-或双击 `启动.bat`。
-
 依赖：Python 3.13 + PyQt6（+ pygame 用于听写语音）
-
-## 打包（绿色便携）
-
-```bash
-python -m PyInstaller "写作训练.spec" --noconfirm --clean
-```
-
-产物在 `dist\写作训练\`，`--onedir` 自包含，整个文件夹可拷贝到任意路径双击运行，不写注册表 / 系统位置。
 
 ## 项目结构
 
 ```
 writing_train_ui.py   主程序（界面 + 逻辑）
 training_tool.py      启动入口
-写作训练.spec          PyInstaller 打包配置
-启动.bat               Windows 启动脚本
 core/                 数据读写
 ui/                   主题、控件、样式
   widgets.py          OrnateCardFrame / LineNumberWidget / SegmentedToggle 等
